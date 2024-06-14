@@ -164,7 +164,7 @@ const items = [
         id: 3,
         nome: 'Jacky',
         img: '../static/Jacky.png',
-    },    {
+    }, {
         id: 3,
         nome: 'Sprout',
         img: '../static/Sprout.png',
@@ -421,15 +421,29 @@ function buscarItensPorNome() {
     var container_bonecos = document.getElementById('browles');
     container_bonecos.innerHTML = ''; // Limpa o conteúdo anterior
 
-    itemsFiltrados.forEach(val => {
-        container_bonecos.innerHTML += `
-            <div class='bonecos-single'>
-                <img src="${val.img}" />
-                <h2>${val.nome}</h2>
-                <p>${val.sobre}</p>
-            </div>
+    if (itemsFiltrados.length == 0) {
+        container_bonecos.innerHTML = `
+
+        <div class="NE">
+            <img src="../static/nao_encontrado.png" alt="">
+            <p>NAO ENCONTRADO</p>
+        </div>
+        
         `;
-    });
+    } else {
+        itemsFiltrados.forEach(val => {
+            container_bonecos.innerHTML += `
+                <div class='bonecos-single'>
+                    <img src="${val.img}" />
+                    <h2>${val.nome}</h2>
+                    <p>${val.sobre}</p>
+                </div>
+            `;
+        });
+    }
+
+
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
