@@ -1,0 +1,32 @@
+
+
+.lutadores {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#browles {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bonecos-single {
+    width: 170px;
+    height: 200px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bonecos-single img{
+    width: 120px;
+    
+}
