@@ -12,9 +12,11 @@ body{
     align-items: center;
     flex-direction: column;
     background: url('../static/fundo_pro.jpg');
-    background-size: auto;
+    background-size: contain;
+    background-repeat: repeat-y;
     
 }
+
 
 .lutadores {
     width: 100%;

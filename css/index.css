@@ -35,11 +35,42 @@
 }
 .container_sobre{
     width: 900px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.escrita_sobre {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    margin: 10px;
+}
+
+.escrita_sobre p  {
+    margin: 10px;
+}
+
+.escrita_sobre h1 {
+    margin: 10px;
+}
+
+.img_sobre {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_sobre img{
+    width: 300px;
+    height: 300px;
 }
 
 footer {
